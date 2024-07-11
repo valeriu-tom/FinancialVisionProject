@@ -181,7 +181,9 @@ Sig.process()
 data_pattern = Sig.detect_all()
 Sig.summary()
 
+
 # creating the gramian angular field aproach used to transform time series data into images:
+
 def ts2gasf(ts, max_v, min_v):
     '''
     Args:
@@ -285,7 +287,8 @@ load_data = {'data': x_arr, 'target': y_arr}
 #with open(self.load_data, 'wb') as handle:
 #    pickle.dump(load_data, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-# Defining and feeting the neural network model using keras:
+
+# Defining and fiting the neural network model using keras:
 from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPooling2D
